@@ -1,0 +1,54 @@
+package quick.kural.quickstart.retrofit;
+
+import android.content.Context;
+import android.preference.PreferenceManager;
+
+import okhttp3.MultipartBody;
+import quick.kural.quickstart.SplashActivity;
+import quick.kural.quickstart.utils.SharedPrefUtils;
+import retrofit2.Call;
+import retrofit2.http.Header;
+import retrofit2.http.Multipart;
+import retrofit2.http.POST;
+import retrofit2.http.Part;
+
+/**
+ * Created by kural mughil selvam on 08-10-2017.
+ */
+
+public interface ApiInterface {
+
+  Context applicationContext = SplashActivity._context;
+  SharedPrefUtils sharedPrefferences = (SharedPrefUtils) PreferenceManager.getDefaultSharedPreferences(applicationContext);
+
+  static String header = "app_id";
+  static String header_value = "****";
+
+
+  /*@Multipart
+  @POST("user_signup")
+  Call<signupStatus> rf_signUp(@Header(header) String header_value, @Part("first_name") String first_name,
+                               @Part("last_name") String last_name,
+                               @Part("email") String email,
+                               @Part("password") String password,
+                               @Part("phone") String phone,
+                               @Part("zipcode") String zipcode);
+
+  @Multipart
+  @POST("user_login_process")
+  Call<LoginResp> rf_signIn(@Header(header) String header_value, @Part("login_email") String login_email,
+                            @Part("login_password") String login_password);
+
+
+  @Multipart
+  @POST("social_login_process")
+  Call<LoginResp> rf_signIn_social(@Header(header) String header_value, @Part("email") String login_email);
+  //https://stackoverflow.com/questions/39953457/how-to-upload-image-file-in-retrofit-2
+
+
+  @Multipart
+  @POST("upload_profile_picture")
+  Call<UpdateAccountResp> rf_uploadPic(@Header(header) String header_value, @Part("email") String email,
+                                       @Part MultipartBody.Part upload_profile_picture);*/
+
+}
