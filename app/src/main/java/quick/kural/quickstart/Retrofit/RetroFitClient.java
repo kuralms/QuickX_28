@@ -1,4 +1,4 @@
-package quick.kural.quickstart.retrofit;
+package quick.kural.quickstart.Retrofit;
 
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 

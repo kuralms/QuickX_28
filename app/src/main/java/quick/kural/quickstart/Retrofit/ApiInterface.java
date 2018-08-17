@@ -1,16 +1,10 @@
-package quick.kural.quickstart.retrofit;
+package quick.kural.quickstart.Retrofit;
 
 import android.content.Context;
 import android.preference.PreferenceManager;
 
-import okhttp3.MultipartBody;
-import quick.kural.quickstart.SplashActivity;
-import quick.kural.quickstart.utils.SharedPrefUtils;
-import retrofit2.Call;
-import retrofit2.http.Header;
-import retrofit2.http.Multipart;
-import retrofit2.http.POST;
-import retrofit2.http.Part;
+import quick.kural.quickstart.Activitys.SplashActivity;
+import quick.kural.quickstart.Utils.SharedPrefUtils;
 
 /**
  * Created by kural mughil selvam on 08-10-2017.
@@ -18,11 +12,6 @@ import retrofit2.http.Part;
 
 public interface ApiInterface {
 
-  Context applicationContext = SplashActivity._context;
-  SharedPrefUtils sharedPrefferences = (SharedPrefUtils) PreferenceManager.getDefaultSharedPreferences(applicationContext);
-
-  static String header = "app_id";
-  static String header_value = "****";
 
 
   /*@Multipart

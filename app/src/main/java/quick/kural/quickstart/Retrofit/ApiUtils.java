@@ -1,8 +1,6 @@
-package quick.kural.quickstart.retrofit;
+package quick.kural.quickstart.Retrofit;
 
 import quick.kural.quickstart.BuildConfig;
-import quick.kural.quickstart.R;
-import quick.kural.quickstart.SplashActivity;
 
 /**
  * Created by kural on 10/10/17.

@@ -1,19 +1,16 @@
-package quick.kural.quickstart;
+package quick.kural.quickstart.Activitys;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
-import quick.kural.quickstart.utils.SharedPrefUtils;
+import quick.kural.quickstart.Utils.SharedPrefUtils;
 
 
 public class SplashActivity extends AppCompatActivity {
@@ -32,10 +29,6 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        _context = getApplicationContext();
-
-        _context = SplashActivity.this;
-        _activity = SplashActivity.this;
         sharedpreferences = getSharedPreferences(SharedPrefUtils.MyPREFERENCES, Context.MODE_PRIVATE);
         Boolean RegisterSuccess = sharedpreferences.getBoolean(SharedPrefUtils.SpRegisterSuccess, false);
         Boolean OtpVerifySuccess = sharedpreferences.getBoolean(SharedPrefUtils.SpOtpVerify, false);

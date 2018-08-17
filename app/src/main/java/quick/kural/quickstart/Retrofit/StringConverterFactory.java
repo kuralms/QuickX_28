@@ -1,4 +1,4 @@
-package quick.kural.quickstart.retrofit;
+package quick.kural.quickstart.Retrofit;
 
 import java.io.IOException;
 import java.lang.annotation.Annotation;

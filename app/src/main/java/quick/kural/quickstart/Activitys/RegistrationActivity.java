@@ -1,4 +1,4 @@
-package quick.kural.quickstart;
+package quick.kural.quickstart.Activitys;
 
 import android.Manifest;
 import android.content.DialogInterface;
@@ -17,20 +17,25 @@ import permissions.dispatcher.OnPermissionDenied;
 import permissions.dispatcher.OnShowRationale;
 import permissions.dispatcher.PermissionRequest;
 import permissions.dispatcher.RuntimePermissions;
+import quick.kural.quickstart.Activitys.FragmentDialouge.GdprFragmentDialougePrivacyandTerms;
+import quick.kural.quickstart.R;
 
 /**
- * Created by kural on 23/3/18.
+ * Created by kural .
  */
 
-@RuntimePermissions
-public class RegistrationActivity extends AppCompatActivity {
+public class RegistrationActivity extends AppCompatActivity implements GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
     }
-/*
+
     @Override
+    public void btn_accept_gdpr(Boolean accepted) {
+
+    }
+  /*  @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         // NOTE: delegate the permission handling to generated method
@@ -63,7 +68,7 @@ public class RegistrationActivity extends AppCompatActivity {
     @OnNeverAskAgain(Manifest.permission.CAMERA)
     void onCameraNeverAskAgain() {
         Toast.makeText(this, R.string.permission_camera_never_ask_again, Toast.LENGTH_SHORT).show();
-    }*/
+    }
 
     @NeedsPermission({Manifest.permission.READ_CONTACTS, Manifest.permission.WRITE_CONTACTS})
     void showContacts() {
@@ -110,6 +115,6 @@ public class RegistrationActivity extends AppCompatActivity {
                 .setCancelable(false)
                 .setMessage(messageResId)
                 .show();
-    }
+    }*/
 
 }

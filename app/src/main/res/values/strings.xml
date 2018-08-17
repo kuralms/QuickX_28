@@ -4,4 +4,6 @@
     <string name="permission_contacts_denied">Some features will not be available without this function</string>
     <string name="permission_contacts_rationale">Some features will not be available without this function</string>
     <string name="permission_contacts_never_ask_again">Some features will not be available without this function</string>
+    <string name="privacy_policy_gdpr" />
+    <string name="termsnConditions_gdpr" />
 </resources>

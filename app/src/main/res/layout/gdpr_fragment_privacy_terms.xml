@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="240dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_margin="3dp"
+    android:background="@drawable/curved_edges">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Welcome to iXprez."
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="Please review &amp; agree to our Terms of Use and Our Privacy Policy to Continue"
+        />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="1sp"
+    android:background="@color/black"></FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:textAlignment="center"
+        android:text="Terms of Use"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/blue_"
+        android:id="@+id/tv_gdpr_terms"
+        android:textSize="18dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height=".5sp"
+        android:layout_margin="2dp"
+        android:background="@color/grey"></FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/blue_"
+        android:id="@+id/tv_gdpr_policy"
+        android:textSize="18dp"
+        android:text="Privacy Policy"
+        android:padding="5dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height=".5sp"
+        android:layout_margin="2dp"
+        android:background="@color/grey"></FrameLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/checkbox_accept_all"
+        android:text="Agree"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:textColor="@color/orange"
+        android:background="@drawable/curved_edges"
+        android:textSize="24dp"
+
+        />
+</LinearLayout>
+
+</LinearLayout>

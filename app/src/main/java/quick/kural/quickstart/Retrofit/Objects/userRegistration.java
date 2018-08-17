@@ -1,9 +1,8 @@
-package quick.kural.quickstart.retrofit.Objects;
+package quick.kural.quickstart.Retrofit.Objects;
 
 /**
  * Created by kural on 23/3/18.
  */
-import java.io.Serializable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
