@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activitys.SplashActivity"
+            android:name=".activitys.SplashActivity"
             android:label="@string/app_name"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/SplashTheme">
@@ -24,11 +24,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Activitys.MainActivity"
+        <activity android:name=".activitys.PermissonRequesterActivity"
             android:screenOrientation="fullSensor"
 
             />
-        <activity android:name=".Activitys.RegistrationActivity"
+        <activity android:name=".activitys.MainActivity"
+            android:screenOrientation="fullSensor"
+
+            />
+        <activity android:name=".activitys.RegistrationActivity"
             android:screenOrientation="fullSensor"
 
             />

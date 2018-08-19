@@ -1,11 +1,5 @@
 package quick.kural.quickstart.Retrofit;
 
-import android.content.Context;
-import android.preference.PreferenceManager;
-
-import quick.kural.quickstart.Activitys.SplashActivity;
-import quick.kural.quickstart.Utils.SharedPrefUtils;
-
 /**
  * Created by kural mughil selvam on 08-10-2017.
  */
