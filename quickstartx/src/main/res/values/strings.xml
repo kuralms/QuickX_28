@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="permission_camera_rationale">Camera permission is needed to show the camera preview.</string>
+    <string name="permission_contacts_rationale">Contacts permissions are needed to demonstrate access to the contacts database.</string>
+    <string name="permission_camera_denied">Camera permission was denied. Please consider granting it in order to access the camera!</string>
+    <string name="permission_camera_never_ask_again">Camera permission was denied with never ask again.</string>
+
+    <string name="privacy_policy_gdpr" >Sample</string>>
+    <string name="termsnConditions_gdpr" >Sample</string>
+    <string name="show_camera">Show Camera</string>
+    <string name="show_contacts">Show Contacts</string>
+    <string name="permission_contacts_denied">PermissionDenied</string>
+    <string name="button_allow">Grant Permission</string>
+    <string name="permission_contacts_never_ask_again">Don\'t Ask again</string>
+    <string name="button_deny">Nope I deny</string>
+    <string name="back"><![CDATA[<Back]]></string>
+    <string name="contacts_intro">Contacts</string>
+    <string name="add_contact">add</string>
+    <string name="show_contact">show</string>
+    <string name="contacts_string">Total number of contacts: %1$,d\nFirst contact:<b>%2$s</b></string>
+    <string name="contacts_empty">no contacts</string>
+    <string name="app_name">Hurray</string>
+    <string name="title_home">heeee</string>
+    <string name="title_dashboard">sasa</string>
+    <string name="title_notifications">asasa</string>>
+</resources>
