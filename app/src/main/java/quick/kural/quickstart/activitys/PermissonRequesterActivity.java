@@ -3,13 +3,14 @@ package quick.kural.quickstart.activitys;
 import android.Manifest;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.StringRes;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.StringRes;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
+
 import permissions.dispatcher.NeedsPermission;
 import permissions.dispatcher.OnNeverAskAgain;
 import permissions.dispatcher.OnPermissionDenied;
@@ -27,27 +28,27 @@ public class PermissonRequesterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_permission_requestor);
         findViewById(R.id.button_camera).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              //  MainActivityPermissionsDispatcher.showCameraWithPermissionCheck(PermissonRequesterActivity.this);
+                PermissonRequesterActivityPermissionsDispatcher.showCameraWithPermissionCheck(PermissonRequesterActivity.this);
             }
         });
         findViewById(R.id.button_contacts).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             //   MainActivityPermissionsDispatcher.showContactsWithPermissionCheck(PermissonRequesterActivity.this);
+                PermissonRequesterActivityPermissionsDispatcher.showContactsWithPermissionCheck(PermissonRequesterActivity.this);
             }
         });
     }
 
-/*    @Override
+    @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         // NOTE: delegate the permission handling to generated method
-        MainActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
-    }*/
+        PermissonRequesterActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
+    }
 
     @NeedsPermission(Manifest.permission.CAMERA)
     void showCamera() {

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidQuickStart.iml" filepath="$PROJECT_DIR$/AndroidQuickStart.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quickstartx/quickstartx.iml" filepath="$PROJECT_DIR$/quickstartx/quickstartx.iml" />
     </modules>
   </component>
 </project>

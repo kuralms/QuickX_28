@@ -8,9 +8,9 @@ import android.content.SharedPreferences;
  */
 
 public class SharedPrefUtils {
-    public static String MyPREFERENCES = "MyPREFERENCES";
-    public static String SpRegisterSuccess = "SpRegisterSuccess" ;
-    public static String SpOtpVerify = "SpOtpVerify";
+    public static String AppPreference = "AppPreference";
+    public static String RegisterSuccess = "RegisterSuccess" ;
+    public static String OtpVerify = "OtpVerify";
 
     private static SharedPreferences getSharedPreferences(Context context) {
         return context.getSharedPreferences("APP_PREF", Context.MODE_PRIVATE);

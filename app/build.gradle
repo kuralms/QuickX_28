@@ -51,13 +51,9 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "androidx.appcompat:appcompat:$ANDROIDX_LIBRARY_VERSION"
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
-    implementation 'com.android.support:design:27.1.1'
 
+    // Donot use AndroidX Support
 
-/*
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation 'com.android.support:exifinterface:27.1.1'
     implementation 'com.android.support:design:27.1.1'
@@ -66,12 +62,11 @@ dependencies {
     implementation "com.android.support:support-core-utils:27.1.1"
 
 
-*/
 
 
-    testImplementation 'junit:junit:4.12'
+   /* testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'*/
 
     //fonts
     implementation 'io.github.inflationx:calligraphy3:3.0.0'

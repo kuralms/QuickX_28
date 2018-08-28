@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
+
 import quick.kural.quickstart.Utils.SharedPrefUtils;
 
 
@@ -16,10 +17,6 @@ public class SplashActivity extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 1000;  //1 Seconds
     SharedPreferences sharedpreferences;
     Intent i;
-    public static Context _context;
-    String Permission4;
-    private static final int PERMISSION_REQUEST_CODE = 1;
-    Activity _activity;
 
 
 
@@ -27,11 +24,12 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        sharedpreferences = getSharedPreferences(SharedPrefUtils.MyPREFERENCES, Context.MODE_PRIVATE);
-        Boolean RegisterSuccess = sharedpreferences.getBoolean(SharedPrefUtils.SpRegisterSuccess, false);
-        Boolean OtpVerifySuccess = sharedpreferences.getBoolean(SharedPrefUtils.SpOtpVerify, false);
-        // OtpVerifiedSuccess = true;  //for testing . remove it
-      //  Permission4 = PermissionStrings.WRITE_EXTERNAL_STORAGE;
+        sharedpreferences = getSharedPreferences(SharedPrefUtils.AppPreference, Context.MODE_PRIVATE);
+        Boolean RegisterSuccess = sharedpreferences.getBoolean(SharedPrefUtils.RegisterSuccess, false);
+        Boolean OtpVerifySuccess = sharedpreferences.getBoolean(SharedPrefUtils.OtpVerify, false);
+
+        OtpVerifySuccess = true;  //for testing . remove it
+
         if (OtpVerifySuccess) {
             i = new Intent(SplashActivity.this, MainActivity.class);
         } else {

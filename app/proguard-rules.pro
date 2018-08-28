@@ -97,10 +97,10 @@
 
 # Gson specific classes
 -keep class sun.misc.Unsafe { *; }
-#-keep class com.google.gson.stream.** { *; }
+-keep class com.google.gson.stream.** { *; }
 
 # Application classes that will be serialized/deserialized over Gson
--keep class com.quad.xpress.models.** { *; }
+-keep class quick.kural.quickstart.Retrofit.Objects.** { *; }
 
 ##---------------End: proguard configuration for Gson  ----------
 
@@ -110,7 +110,12 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
-
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public class * extends com.bumptech.glide.module.AppGlideModule
+-keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
 -ignorewarnings
 
 -keep class * {
