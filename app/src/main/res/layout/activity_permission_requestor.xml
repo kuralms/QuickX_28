@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/horizontal_page_margin"
     android:paddingRight="@dimen/horizontal_page_margin"
     android:paddingTop="@dimen/vertical_page_margin"
-    tools:context=".PermissonRequesterActivity">
+    tools:context=".activitys.PermissonRequesterActivity">
 
     <Button
         android:id="@+id/button_camera"

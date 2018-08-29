@@ -1,23 +1,22 @@
 package quick.kural.quickstart.activitys;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,8 +24,11 @@ import butterknife.OnClick;
 import quick.kural.quickstart.Adapters.RecyclerViewGridAdapter;
 import quick.kural.quickstart.R;
 import quick.kural.quickstart.Retrofit.Objects.Obj_vp_data;
+import quick.kural.quickstart.activitys.FragmentDialouge.GdprFragmentDialougePrivacyandTerms;
+import quick.kural.quickstart.activitys.TabbedActivity.TabbedActivity;
 
-public class MainActivity extends Activity implements RecyclerViewGridAdapter.RecylerGridInterface {
+public class MainActivity extends AppCompatActivity implements RecyclerViewGridAdapter.RecylerGridInterface,
+GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface{
 
     @BindView(R.id.recycler_view_grid)
     RecyclerView rv_grid;
@@ -35,6 +37,7 @@ public class MainActivity extends Activity implements RecyclerViewGridAdapter.Re
     Obj_vp_data listData;
     private static final int TIME_INTERVAL = 1500;
     private long mBackPressed;
+    private GdprFragmentDialougePrivacyandTerms dialougeGdpr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +84,32 @@ public class MainActivity extends Activity implements RecyclerViewGridAdapter.Re
 
     }
 
+    @OnClick(R.id.btn_tab)
+    public void ShowTabs(){
+
+        Intent in_tab  = new Intent(MainActivity.this,TabbedActivity.class);
+        startActivity(in_tab);
+
+    }
+
+
+    @OnClick(R.id.btn_fragment_dialouge)
+    public void ShowDialougeFragment(){
+
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        Fragment prev = getSupportFragmentManager().findFragmentByTag("dialog");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+        dialougeGdpr = GdprFragmentDialougePrivacyandTerms.newInstance("Gdpr",1);
+        dialougeGdpr.setCancelable(false);
+        dialougeGdpr.show(ft, "verify");
+
+
+    }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -112,16 +141,21 @@ public class MainActivity extends Activity implements RecyclerViewGridAdapter.Re
     public void onBackPressed() {
 
 
+
         if (mBackPressed + TIME_INTERVAL > System.currentTimeMillis())
         {
             super.onBackPressed();
             return;
         }
-        else { Toast.makeText(getBaseContext(), "Tap back button in order to exit", Toast.LENGTH_SHORT).show(); }
+        else { Toast.makeText(getBaseContext(), "Tap Back again to exit.", Toast.LENGTH_SHORT).show(); }
 
         mBackPressed = System.currentTimeMillis();
 
 
     }
 
+    @Override
+    public void btn_accept_gdpr(Boolean accepted) {
+            dialougeGdpr.dismiss();
+    }
 }

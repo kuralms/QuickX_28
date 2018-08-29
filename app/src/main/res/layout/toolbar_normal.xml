@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="@color/primary"
-    android:elevation="4dp">
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="3dp">
-     <ImageButton
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:background="@android:drawable/ic_input_delete"
-         android:id="@+id/tb_normal_back"/>
-    </FrameLayout>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/appbar_padding_top"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+   <android.support.v7.widget.Toolbar
+   android:id="@+id/toolbar"
+   android:layout_width="match_parent"
+   android:layout_height="?attr/actionBarSize"
+   android:layout_weight="1"
+   android:background="?attr/colorPrimary"
+   app:layout_scrollFlags="scroll|enterAlways"
+   app:popupTheme="@style/AppTheme.PopupOverlay"
+   app:title="@string/app_name">
 
 
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,8 +35,21 @@
         android:maxEms="20"
         android:textColor="@color/white"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-       />
+        android:layout_centerHorizontal="true"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_input_delete"
+            android:id="@+id/tb_normal_back"/>
+    </FrameLayout>
+
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -47,5 +67,8 @@
         android:visibility="invisible"
         android:id="@+id/tb_normal_menu"/>
 
+       />
 
-</RelativeLayout>
+  </RelativeLayout>
+   </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

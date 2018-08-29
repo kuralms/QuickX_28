@@ -6,8 +6,8 @@
     <string name="permission_camera_denied">Camera permission was denied. Please consider granting it in order to access the camera!</string>
     <string name="permission_camera_never_ask_again">Camera permission was denied with never ask again.</string>
 
-    <string name="privacy_policy_gdpr" >Sample</string>>
-    <string name="termsnConditions_gdpr" >Sample</string>
+    <string name="privacy_policy_gdpr">https://github.com/kuralms/AndroidQuickStart</string>>
+    <string name="termsnConditions_gdpr">https://github.com/kuralms/AndroidQuickStart</string>
     <string name="show_camera">Show Camera</string>
     <string name="show_contacts">Show Contacts</string>
     <string name="permission_contacts_denied">PermissionDenied</string>
@@ -19,5 +19,7 @@
     <string name="add_contact">add</string>
     <string name="show_contact">show</string>
     <string name="contacts_string">Total number of contacts: %1$,d\nFirst contact:<b>%2$s</b></string>
-    <string name="contacts_empty">no contacts</string>>
+    <string name="contacts_empty">no contacts</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>>
 </resources>

@@ -80,7 +80,7 @@ public class GdprFragmentDialougePrivacyandTerms extends DialogFragment {
         }
         setStyle(style, theme);*/
 
-        setStyle(DialogFragment.STYLE_NO_FRAME,  android.R.style.Theme_DeviceDefault_Dialog_Alert);
+        setStyle(DialogFragment.STYLE_NO_FRAME,  android.R.style.Theme_Dialog);
 
 
 
