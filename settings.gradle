@@ -1,1 +1,1 @@
-include ':app', ':quickstartx'
+include ':app', ':quickstartx', ':ExecuteAlgos'

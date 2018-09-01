@@ -13,10 +13,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -39,6 +41,8 @@ GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface{
     private long mBackPressed;
     private GdprFragmentDialougePrivacyandTerms dialougeGdpr;
 
+    @BindView(R.id.tv_calc)
+    TextView tv_cala;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,21 +63,92 @@ GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface{
             }
         });
 
-        listData = new Obj_vp_data("https://upload.wikimedia.org/wikipedia/commons/3/33" +
+      /*  listData = new Obj_vp_data("https://upload.wikimedia.org/wikipedia/commons/3/33" +
                 "                               /PasserPyrrhonotusKeulemans.jpg","one");
         for (int i = 0; i < 6 ; i++) {
             listDatas.add(listData);
         }
         rv_grid.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
         rv_adapter = new RecyclerViewGridAdapter(getApplicationContext(),MainActivity.this,listDatas);
-        rv_grid.setAdapter(rv_adapter);
+        rv_grid.setAdapter(rv_adapter);*/
 
+        //3, {"411"}
+        int digits = 10;
 
+        ArrayList<String> Prefixes = new ArrayList<>();
+        for (int i = 0; i <=50 ; i++) {
 
+            Prefixes.add(String.valueOf(i));
+        }
 
+        int numberAllowed [] = {0,1,2,3,4,5,6,7,8,9,10};
 
+        mtd_calculation(digits,Prefixes,numberAllowed);
 
     }
+
+    private void mtd_calculation(int digits,ArrayList<String> Prefixes,int[] number_pool) {
+
+        int count = 0 ;
+
+
+        for (int i = 0; i <=digits ; i++) {
+
+            for (int j = 0; j <Prefixes.size() ; j++) {
+
+                if(!String.valueOf(i).startsWith(Prefixes.get(j))){
+
+                    count++;
+                }
+
+            }
+
+
+        }
+
+        Toast.makeText(this, "Result"+count, Toast.LENGTH_SHORT).show();
+        System.out.print("Result"+count);
+
+    }
+
+
+
+
+
+    static void combinationUtil(int arr[], int data[], int start,
+                                int end, int index, int r)
+    {
+        // Current combination is ready to be printed, print it
+        if (index == r)
+        {
+            for (int j=0; j<r; j++)
+                System.out.print(data[j]+" ");
+            System.out.println("");
+            return;
+        }
+
+        // replace index with all possible elements. The condition
+        // "end-i+1 >= r-index" makes sure that including one element
+        // at index will make a combination with remaining elements
+        // at remaining positions
+        for (int i=start; i<=end && end-i+1 >= r-index; i++)
+        {
+            data[index] = arr[i];
+            combinationUtil(arr, data, i+1, end, index+1, r);
+        }
+    }
+
+    // The main function that prints all combinations of size r
+    // in arr[] of size n. This function mainly uses combinationUtil()
+    static void printCombination(int arr[], int n, int r)
+    {
+        // A temporary array to store all combination one by one
+        int data[]=new int[r];
+
+        // Print all combination using temprary array 'data[]'
+        combinationUtil(arr, data, 0, n-1, 0, r);
+    }
+
 
 
     @OnClick(R.id.btn_view_pager)
