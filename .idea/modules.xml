@@ -4,8 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidQuickStart.iml" filepath="$PROJECT_DIR$/AndroidQuickStart.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExecuteAlgos/ExecuteAlgos.iml" filepath="$PROJECT_DIR$/ExecuteAlgos/ExecuteAlgos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/quickstartx/quickstartx.iml" filepath="$PROJECT_DIR$/quickstartx/quickstartx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaProgramms/JavaProgramms.iml" filepath="$PROJECT_DIR$/JavaProgramms/JavaProgramms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuickStart27/QuickStart27.iml" filepath="$PROJECT_DIR$/QuickStart27/QuickStart27.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuickstartX/QuickstartX.iml" filepath="$PROJECT_DIR$/QuickstartX/QuickstartX.iml" />
     </modules>
   </component>
 </project>

@@ -9,8 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ExecuteAlgos" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/quickstartx" />
+            <option value="$PROJECT_DIR$/JavaProgramms" />
+            <option value="$PROJECT_DIR$/QuickStart27" />
+            <option value="$PROJECT_DIR$/QuickstartX" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
