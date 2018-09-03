@@ -59,7 +59,7 @@ public class RecyclerViewGridAdapter extends RecyclerView.Adapter<RecyclerViewGr
         if (null != rvInterface_main) {
         // Notify the active callbacks interface (the activity, if it
             // is attached to one) that an item has been selected.
-        rvInterface_main.recyclerItemClicked();
+        rvInterface_main.recyclerItemClicked(position);
         }
         }
         });
@@ -93,7 +93,7 @@ public class RecyclerViewGridAdapter extends RecyclerView.Adapter<RecyclerViewGr
 
 
     public interface RecylerGridInterface{
-         void recyclerItemClicked();
+         void recyclerItemClicked(int positionOfClick);
     }
 
 

@@ -29,8 +29,9 @@ import quick.kural.quickstart.Retrofit.Objects.Obj_vp_data;
 import quick.kural.quickstart.activitys.FragmentDialouge.GdprFragmentDialougePrivacyandTerms;
 import quick.kural.quickstart.activitys.TabbedActivity.TabbedActivity;
 
-public class MainActivity extends AppCompatActivity implements RecyclerViewGridAdapter.RecylerGridInterface,
-GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface{
+public class MainActivity extends AppCompatActivity
+        implements RecyclerViewGridAdapter.RecylerGridInterface,
+        GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface{
 
     @BindView(R.id.recycler_view_grid)
     RecyclerView rv_grid;
@@ -63,16 +64,9 @@ GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface{
             }
         });
 
-      /*  listData = new Obj_vp_data("https://upload.wikimedia.org/wikipedia/commons/3/33" +
-                "                               /PasserPyrrhonotusKeulemans.jpg","one");
-        for (int i = 0; i < 6 ; i++) {
-            listDatas.add(listData);
-        }
-        rv_grid.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
-        rv_adapter = new RecyclerViewGridAdapter(getApplicationContext(),MainActivity.this,listDatas);
-        rv_grid.setAdapter(rv_adapter);*/
+        mtd_list_sample();
 
-        //3, {"411"}
+   /*
         int digits = 10;
 
         ArrayList<String> Prefixes = new ArrayList<>();
@@ -83,7 +77,21 @@ GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface{
 
         int numberAllowed [] = {0,1,2,3,4,5,6,7,8,9,10};
 
-        mtd_calculation(digits,Prefixes,numberAllowed);
+        mtd_calculation(digits,Prefixes,numberAllowed);*/
+
+    }
+
+    private void mtd_list_sample() {
+
+        listData = new Obj_vp_data("https://upload.wikimedia.org/wikipedia/commons/3/33" +
+                "                               /PasserPyrrhonotusKeulemans.jpg","one");
+        for (int i = 0; i < 6 ; i++) {
+            listDatas.add(listData);
+        }
+        rv_grid.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
+        rv_adapter = new RecyclerViewGridAdapter(getApplicationContext(),MainActivity.this,listDatas);
+        rv_grid.setAdapter(rv_adapter);
+
 
     }
 
@@ -113,41 +121,6 @@ GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface{
 
 
 
-
-
-    static void combinationUtil(int arr[], int data[], int start,
-                                int end, int index, int r)
-    {
-        // Current combination is ready to be printed, print it
-        if (index == r)
-        {
-            for (int j=0; j<r; j++)
-                System.out.print(data[j]+" ");
-            System.out.println("");
-            return;
-        }
-
-        // replace index with all possible elements. The condition
-        // "end-i+1 >= r-index" makes sure that including one element
-        // at index will make a combination with remaining elements
-        // at remaining positions
-        for (int i=start; i<=end && end-i+1 >= r-index; i++)
-        {
-            data[index] = arr[i];
-            combinationUtil(arr, data, i+1, end, index+1, r);
-        }
-    }
-
-    // The main function that prints all combinations of size r
-    // in arr[] of size n. This function mainly uses combinationUtil()
-    static void printCombination(int arr[], int n, int r)
-    {
-        // A temporary array to store all combination one by one
-        int data[]=new int[r];
-
-        // Print all combination using temprary array 'data[]'
-        combinationUtil(arr, data, 0, n-1, 0, r);
-    }
 
 
 
@@ -208,8 +181,8 @@ GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface{
     }
 
     @Override
-    public void recyclerItemClicked() {
-        Toast.makeText(this, "Recycler Item CLicked", Toast.LENGTH_SHORT).show();
+    public void recyclerItemClicked(int position) {
+        Toast.makeText(this, "Recycler Item CLicked---"+position, Toast.LENGTH_SHORT).show();
     }
 
     @Override
