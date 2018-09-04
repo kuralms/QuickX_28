@@ -121,7 +121,12 @@ public class MainActivity extends AppCompatActivity
 
 
 
+    @OnClick(R.id.btn_search)
+    public void search_act(){
+        Intent in_vp = new Intent(MainActivity.this, SearchActivity.class);
+        startActivity(in_vp);
 
+    }
 
 
     @OnClick(R.id.btn_view_pager)

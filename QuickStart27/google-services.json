@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "470219643905",
+    "firebase_url": "https://yellowpage-a4ada.firebaseio.com",
+    "project_id": "yellowpage-a4ada",
+    "storage_bucket": "yellowpage-a4ada.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470219643905:android:5e995e267e983e54",
+        "android_client_info": {
+          "package_name": "com.x33.yellowpages"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470219643905-gec7q8blqijpf3d1m0ls6ei473mgt4p0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.x33.yellowpages",
+            "certificate_hash": "b7a6df762ec117982140cf7f34374b37242c24b3"
+          }
+        },
+        {
+          "client_id": "470219643905-1sf489kmjr4u68r6mnofmlbb3f9krtnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCny1VLkxWDk00JLN8hsQkey26zUXxpaTQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470219643905-1sf489kmjr4u68r6mnofmlbb3f9krtnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

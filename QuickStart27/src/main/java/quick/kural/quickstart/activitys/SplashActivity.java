@@ -28,7 +28,7 @@ public class SplashActivity extends AppCompatActivity {
         Boolean RegisterSuccess = sharedpreferences.getBoolean(SharedPrefUtils.RegisterSuccess, false);
         Boolean OtpVerifySuccess = sharedpreferences.getBoolean(SharedPrefUtils.OtpVerify, false);
 
-        OtpVerifySuccess = true;  //for testing . remove it
+        OtpVerifySuccess = false;  //for testing . remove it
 
         if (OtpVerifySuccess) {
             i = new Intent(SplashActivity.this, MainActivity.class);
