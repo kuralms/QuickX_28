@@ -6,13 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="quick.kural.quickstart.activitys.MainActivity">
-
+    tools:context="quick.kural.quickstart.activitys.SearchActivity">
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/muted_bg"
+    android:scaleType="centerCrop"/>
     <include
         android:id="@+id/include_toolbar"
-        layout="@layout/toolbar_normal"
+        layout="@layout/toolbar_with_drawer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+
 
     <LinearLayout
     app:layout_anchor="@id/include_toolbar"
@@ -21,20 +27,34 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/linearlayout_dash"
+    android:layout_marginTop="5dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     >
 
-    <android.support.v7.widget.SearchView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/search_bar">
+            <include
+                layout="@layout/heading_texts"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
 
-    </android.support.v7.widget.SearchView>
+            <include
+                android:id="@+id/search_pannel"
+                layout="@layout/search_pannel"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
 
-    <include layout="@layout/content_main"
+
+        <include layout="@layout/content_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+
+        />
 
 </LinearLayout>
 
@@ -45,7 +65,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:id="@+id/bottom_sheet"
-        app:menu="@menu/bottom_bar_search">
+        app:menu="@menu/bottom_bar_search"
+
+        >
 
 
 

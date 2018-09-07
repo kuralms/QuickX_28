@@ -33,4 +33,7 @@
     <string name="google_title_text">Google Sign In</string>
     <string name="signed_out">logged Out</string>
     <string name="facebook_status_fmt">Status FB</string>
+    <string name="search_hint">What are you looking for?</string>
+    <string name="heading_one">WE WILL HELP YOU \n FIND ALL</string>
+    <string name="sub_heading">Find great places, hotels, restaurants, shops.</string>
 </resources>

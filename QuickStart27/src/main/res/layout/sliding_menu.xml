@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+<!--    <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+        xmlns:sliding="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/slidingmenulayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        sliding:viewAbove="@layout/YOUR_ABOVE_VIEW"
+        sliding:viewBehind="@layout/YOUR_BEHIND_BEHIND"
+        sliding:touchModeAbove="margin|fullscreen"
+        sliding:behindOffset="@dimen/YOUR_OFFSET"
+        sliding:behindWidth="@dimen/YOUR_WIDTH"
+        sliding:behindScrollScale="@dimen/YOUR_SCALE"
+        sliding:shadowDrawable="@drawable/YOUR_SHADOW"
+        sliding:shadowWidth="@dimen/YOUR_SHADOW_WIDTH"
+        sliding:fadeEnabled="true|false"
+        sliding:fadeDegree="float"
+        sliding:selectorEnabled="true|false"
+        sliding:selectorDrawable="@drawable/YOUR_SELECTOR"/>-->
+
+
+    <ImageView
+        android:id="@+id/imageView_menu_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_menu_user">
+
+    </com.google.android.gms.common.SignInButton>
+</android.support.constraint.ConstraintLayout>

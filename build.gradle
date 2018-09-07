@@ -20,6 +20,8 @@ allprojects {
         google()
         jcenter()
         maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
+        maven { url "https://jitpack.io" }
+        maven { url "http://jzaccone.github.io/SlidingMenu-aar" }
 
     }
 }

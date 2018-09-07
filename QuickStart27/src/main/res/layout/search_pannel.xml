@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="12dp"
+    android:background="@drawable/curved_edges_transaparent">
+    <!--<android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        >
+-->
+        <EditText
+            android:id="@+id/editText_search_string"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_hint"
+            android:textColorHint="@color/black"
+            android:gravity="left"
+            android:textSize="22sp"
+            android:paddingLeft="5dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/curved_edges_transaparent"
+            android:paddingStart="5dp" />
+   <!-- </android.support.design.widget.TextInputLayout>-->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_margin="5dp"
+       android:gravity="center_vertical">
+       <FrameLayout
+           android:layout_width="0dp"
+           android:layout_height=".5sp"
+           android:layout_weight="1"
+           android:background="@color/black"></FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:layout_margin="2dp"/>
+       <FrameLayout
+           android:layout_width="0dp"
+           android:layout_height=".5sp"
+           android:layout_weight="1"
+           android:background="@color/black"></FrameLayout>
+   </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinner_search_cat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/curved_edges_transaparent"
+        android:paddingStart="5dp"
+        android:tooltipText="Categories">
+
+    </android.support.v7.widget.AppCompatSpinner>
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/curved_edges_red"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:id="@+id/button_search"/>
+</LinearLayout>
+
+
+</LinearLayout>

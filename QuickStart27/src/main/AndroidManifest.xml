@@ -33,7 +33,8 @@
             android:screenOrientation="fullSensor" />
         <activity
             android:name=".activitys.SearchActivity"
-            android:screenOrientation="fullSensor" />
+            android:screenOrientation="fullSensor"
+         android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
             android:name=".activitys.MainActivity"
             android:screenOrientation="fullSensor" />
