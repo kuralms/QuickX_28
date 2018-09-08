@@ -1,6 +1,7 @@
 package quick.kural.quickstart.activitys;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -132,6 +133,10 @@ public class SearchActivity extends BaseActivity
     @Override
     public void recyclerItemClicked(int position) {
         Toast.makeText(this, "Recycler Item CLicked---"+position, Toast.LENGTH_SHORT).show();
+        Intent in_map = new Intent(SearchActivity.this,MapsActivity.class);
+        startActivity(in_map);
+
+
     }
 
     @Override
