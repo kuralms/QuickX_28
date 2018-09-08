@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey200"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <include
+        layout="@layout/toolbar_with_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:layout_gravity="top|start"
+        app:layout_scrollFlags="snap"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@id/toolbar"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+
+        android:padding="2dp"
+        >
+        <include
+            layout="@layout/activity_maps"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:background="@drawable/curved_edges"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/recycler_view_map"
+            android:layout_gravity="bottom"
+            app:reverseLayout="false"
+           />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bootom_shett_with_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_peekHeight= "200dp"
+        android:orientation="vertical"
+        app:behavior_hideable = "false">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"/>
+
+    <!--<include
+
+        layout="@layout/recycler_view"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        />-->
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

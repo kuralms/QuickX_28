@@ -74,6 +74,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="quick.kural.quickstart.activitys.SearchActivity" />
         </activity>
+        <activity
+            android:name=".activitys.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".activitys.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="quick.kural.quickstart.activitys.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

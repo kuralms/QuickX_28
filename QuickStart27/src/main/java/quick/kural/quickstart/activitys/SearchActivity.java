@@ -3,12 +3,15 @@ package quick.kural.quickstart.activitys;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import android.util.DisplayMetrics;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -29,7 +32,7 @@ import quick.kural.quickstart.activitys.FragmentDialouge.GdprFragmentDialougePri
 
 public class SearchActivity extends BaseActivity
         implements AdapterSearchResults.RecylerGridInterface,
-        GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface{
+        GdprFragmentDialougePrivacyandTerms.AcceptGdprInterface, BottomNavigationView.OnNavigationItemReselectedListener {
 
     @BindView(R.id.spinner_search_cat)
     Spinner spinner_cat;
@@ -40,6 +43,8 @@ public class SearchActivity extends BaseActivity
     @BindView(R.id.editText_search_string)
     EditText et_searchbar;
 
+    @BindView(R.id.bottom_navigation_view)
+    BottomNavigationView btmView;
 
     AdapterSearchResults rv_adapter;
     ArrayList<Obj_vp_data> listDatas = new ArrayList<>();
@@ -63,6 +68,9 @@ public class SearchActivity extends BaseActivity
         menu.setFadeDegree(0.35f);
         menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
         menu.setMenu(R.layout.sliding_menu);
+
+        btmView.setOnNavigationItemReselectedListener(this);
+
         mtd_list_sample();
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -159,5 +167,26 @@ public class SearchActivity extends BaseActivity
     @Override
     public void btn_accept_gdpr(Boolean accepted) {
             dialougeGdpr.dismiss();
+    }
+
+    @Override
+    public void onNavigationItemReselected(@NonNull MenuItem menuItem) {
+
+        switch (menuItem.getItemId()) {
+            case R.id.action_search: {
+            }
+            break;
+            case R.id.action_settings: {
+
+                Intent settingsIntent = new Intent(SearchActivity.this,SettingsActivity.class);
+                startActivity(settingsIntent);
+
+            }
+            break;
+            case R.id.action_navigation: {
+            }
+            break;
+
+        }
     }
 }

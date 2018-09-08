@@ -17,7 +17,8 @@ import quick.kural.quickstart.R;
 import quick.kural.quickstart.Retrofit.Objects.Obj_vp_data;
 import quick.kural.quickstart.Utils.GlideApp;
 
-public class AdapterSearchResults extends RecyclerView.Adapter<AdapterSearchResults.ViewHolder> {
+public class AdapterSearchResults extends
+    RecyclerView.Adapter<AdapterSearchResults.ViewHolder> {
     RecylerGridInterface rvInterface_main;
     List<Obj_vp_data> mValues;
     Context context_main;
