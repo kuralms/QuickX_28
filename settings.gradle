@@ -1,1 +1,1 @@
-include ':QuickStart27', ':QuickstartX', ':ExecuteAlgos', ':JavaProgramms'
+include ':QuickStart27', ':QuickstartX', ':JavaProgramms'

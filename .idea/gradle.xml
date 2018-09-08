@@ -8,7 +8,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/ExecuteAlgos" />
             <option value="$PROJECT_DIR$/JavaProgramms" />
             <option value="$PROJECT_DIR$/QuickStart27" />
             <option value="$PROJECT_DIR$/QuickstartX" />

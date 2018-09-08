@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidQuickStarter.iml" filepath="$PROJECT_DIR$/AndroidQuickStarter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ExecuteAlgos/ExecuteAlgos.iml" filepath="$PROJECT_DIR$/ExecuteAlgos/ExecuteAlgos.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaProgramms/JavaProgramms.iml" filepath="$PROJECT_DIR$/JavaProgramms/JavaProgramms.iml" />
       <module fileurl="file://$PROJECT_DIR$/QuickStart27/QuickStart27.iml" filepath="$PROJECT_DIR$/QuickStart27/QuickStart27.iml" />
       <module fileurl="file://$PROJECT_DIR$/QuickstartX/QuickstartX.iml" filepath="$PROJECT_DIR$/QuickstartX/QuickstartX.iml" />

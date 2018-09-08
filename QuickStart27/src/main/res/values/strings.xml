@@ -36,4 +36,5 @@
     <string name="search_hint">What are you looking for?</string>
     <string name="heading_one">WE WILL HELP YOU \n FIND ALL</string>
     <string name="sub_heading">Find great places, hotels, restaurants, shops.</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

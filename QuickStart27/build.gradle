@@ -10,8 +10,8 @@ android {
             storeFile file('/mnt/3d0ba385-bc8f-4fe7-b967-105cf8e04d3c/code/kural/AndroidQuickStart/DevelopmentKe.jks')
         }
     }
-    compileSdkVersion 27
-    buildToolsVersion('28.0.0')
+    compileSdkVersion 28
+
     flavorDimensions "default"
     defaultConfig {
         applicationId "quick.kural.quickstart"
@@ -19,7 +19,7 @@ android {
         targetSdkVersion TARGET_SDK_VERSION
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
     }
 
     productFlavors {
@@ -72,13 +72,17 @@ dependencies {
         exclude module: 'support-annotations'
         exclude module: 'recyclerview-v7'
     }
+
+    implementation 'com.android.support:multidex:1.0.3'
+
     // Donot use AndroidX Support
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    implementation 'com.android.support:exifinterface:27.1.1'
-    implementation 'com.android.support:design:27.1.1'
-    implementation 'com.android.support:cardview-v7:27.1.1'
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
-    implementation 'com.android.support:support-core-utils:27.1.1'
+    implementation 'com.android.support:exifinterface:28.0.0-rc01'
+    implementation 'com.android.support:design:28.0.0-rc01'
+    implementation 'com.android.support:cardview-v7:28.0.0-rc01'
+    implementation 'com.android.support:recyclerview-v7:28.0.0-rc01'
+    implementation 'com.android.support:support-core-utils:28.0.0-rc01'
+    implementation 'com.android.support:customtabs:28.0.0-rc01'
     //fonts
     implementation 'io.github.inflationx:calligraphy3:3.0.0'
     implementation 'io.github.inflationx:viewpump:1.0.0'
@@ -132,7 +136,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:16.0.0'
 
     implementation 'com.facebook.android:facebook-login:4.36.0'
-    implementation 'com.android.support:customtabs:27.1.1'
+
 
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.5.+'
     implementation 'com.jeremyfeinstein.slidingmenu:library:1.3@aar'

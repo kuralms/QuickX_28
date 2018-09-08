@@ -13,7 +13,7 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:scaleType">fitCenter</item>
         <item name="android:layout_margin">30dp</item>
-        <item name="android:background">@drawable/splash_screen</item>
+        <item name="android:background">@mipmap/ic_launcher</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
