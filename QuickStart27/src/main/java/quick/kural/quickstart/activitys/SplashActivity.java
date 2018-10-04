@@ -31,10 +31,10 @@ public class SplashActivity extends AppCompatActivity {
         OtpVerifySuccess = false;  //for testing . remove it
 
         if (OtpVerifySuccess) {
-            i = new Intent(SplashActivity.this, SearchActivity.class);
+            i = new Intent(SplashActivity.this, SpacexLaunches.class);
         } else {
 
-            i = new Intent(SplashActivity.this, SearchActivity.class);
+            i = new Intent(SplashActivity.this, SpacexLaunches.class);
         }
 
         Intent2Activity();

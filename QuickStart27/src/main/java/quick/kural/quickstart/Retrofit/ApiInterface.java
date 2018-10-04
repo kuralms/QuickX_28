@@ -1,10 +1,25 @@
 package quick.kural.quickstart.Retrofit;
 
+import java.util.List;
+
+import io.reactivex.Single;
+import quick.kural.quickstart.Retrofit.Objects.spacex.RespSpaceX;
+
+import retrofit2.Call;
+import retrofit2.http.Body;
+import retrofit2.http.GET;
+import retrofit2.http.Headers;
+import retrofit2.http.POST;
+
 /**
  * Created by kural mughil selvam on 08-10-2017.
  */
 
 public interface ApiInterface {
+
+
+    @GET("/v2/launches")
+    Single <List<RespSpaceX>> rf_spaceXResp();
 
 
 
@@ -33,5 +48,10 @@ public interface ApiInterface {
   @POST("upload_profile_picture")
   Call<UpdateAccountResp> rf_uploadPic(@Header(header) String header_value, @Part("email") String email,
                                        @Part MultipartBody.Part upload_profile_picture);*/
+
+
+
+
+
 
 }

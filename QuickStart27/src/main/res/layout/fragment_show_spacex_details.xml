@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_margin="3dp"
+    android:background="@drawable/curved_edges">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/tv_fssd_mission_name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="Deatils ->"
+        android:id="@+id/tv_fssd_client"
+        />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="1sp"
+    android:background="@color/black"></FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="Visit Wiki"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/blue_"
+        android:id="@+id/tv_fssd_wiki"
+        android:textSize="18dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height=".5sp"
+        android:layout_margin="2dp"
+        android:background="@color/grey"></FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/blue_"
+        android:id="@+id/tv_fssd_youtube"
+        android:textSize="18dp"
+        android:text="View on Youtube"
+        android:padding="5dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height=".5sp"
+        android:layout_margin="2dp"
+        android:background="@color/grey"></FrameLayout>
+
+
+
+
+
+  <!--  ■ Rocket Name
+    ■ Description
+    ■ Wikipedia link (should open by browser)
+    ■ Engine Type
+    ■ Engine Version
+    ■ Landing Legs Number
+    ■ Landing Legs Material-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/tv_fssd_launch_date"
+                android:textSize="18dp"
+                android:text="Launch date"
+                android:padding="5dp"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height=".5sp"
+                android:layout_margin="2dp"
+                android:background="@color/grey"></FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/tv_fssd_flight_id"
+                android:textSize="18dp"
+                android:text="Flight ID"
+                android:padding="5dp"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height=".5sp"
+                android:layout_margin="2dp"
+                android:background="@color/grey"></FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/tv_fssd_rocket_name"
+            android:textSize="18dp"
+            android:text="Rocket Name"
+            android:padding="5dp"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height=".5sp"
+            android:layout_margin="2dp"
+            android:background="@color/grey"></FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/tv_fssd_rocket_description"
+            android:textSize="18dp"
+            android:text="Description"
+            android:padding="5dp"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height=".5sp"
+            android:layout_margin="2dp"
+            android:background="@color/grey"></FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/tv_fssd_engine_type"
+            android:textSize="18dp"
+            android:text="Engine Type"
+            android:padding="5dp"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height=".5sp"
+            android:layout_margin="2dp"
+            android:background="@color/grey"></FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/tv_fssd_engine_ver"
+            android:textSize="18dp"
+            android:text="Engine Version"
+            android:padding="5dp"
+            />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height=".5sp"
+                android:layout_margin="2dp"
+                android:background="@color/grey"></FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height=".5sp"
+        android:layout_margin="2dp"
+        android:background="@color/grey"></FrameLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/ib_fssd_close"
+        android:text="Agree"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:textColor="@color/orange"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:background="@drawable/curved_edges"
+        android:textSize="24dp"
+
+        />
+</LinearLayout>
+
+</LinearLayout>

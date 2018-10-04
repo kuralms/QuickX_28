@@ -141,7 +141,7 @@ public class SearchActivity extends BaseActivity
     @Override
     public void recyclerItemClicked(int position) {
         Toast.makeText(this, "Recycler Item CLicked---"+position, Toast.LENGTH_SHORT).show();
-        Intent in_map = new Intent(SearchActivity.this,MapsActivity.class);
+        Intent in_map = new Intent(SearchActivity.this,ActivityRunMapper.class);
         startActivity(in_map);
 
 
