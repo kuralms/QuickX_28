@@ -1,1 +1,1 @@
-include ':QuickStart27', ':QuickstartX', ':JavaProgramms'
+include ':QuickstartX'

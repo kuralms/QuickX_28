@@ -5,6 +5,7 @@
     <color name="RedAccent">#FE6C27</color>
     <color name="Text_Login">#ffffff</color>
     <color name="white">#ffffff</color>
+    <color name="navigation_icon_color">#ffffff</color>
     <color name="grey">#696969</color>
     <color name="black">#000000</color>
     <color name="grey800">#424242</color>

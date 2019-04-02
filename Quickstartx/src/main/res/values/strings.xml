@@ -20,8 +20,9 @@
     <string name="show_contact">show</string>
     <string name="contacts_string">Total number of contacts: %1$,d\nFirst contact:<b>%2$s</b></string>
     <string name="contacts_empty">no contacts</string>
-    <string name="app_name">Hurray</string>
     <string name="title_home">heeee</string>
     <string name="title_dashboard">sasa</string>
-    <string name="title_notifications">asasa</string>>
+    <string name="title_notifications">asasa</string>
+    <string name="alert">Alert</string>
+    <string name="OK">OK</string>>
 </resources>
