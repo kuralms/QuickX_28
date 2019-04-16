@@ -43,7 +43,7 @@ public class RecyclerViewGridAdapter extends RecyclerView.Adapter<RecyclerViewGr
         Glide.with(context_main)
         .load(mItem.getImage_address())
         .circleCrop()
-        .placeholder(R.drawable.logo)
+        .placeholder(android.R.drawable.ic_menu_close_clear_cancel)
         .into(holder.imageView);
 
 

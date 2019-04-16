@@ -44,7 +44,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_action_arrow_back"
+            android:src="@drawable/ic_arrow_back_ios"
             android:background="@android:color/transparent"
             android:tint="@color/navigation_icon_color"
             android:tintMode="src_atop"
@@ -64,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:background="@drawable/ic_action_drag_handle"
+        android:background="@drawable/ic_drag_handle"
         android:layout_alignParentEnd="true"
         android:visibility="invisible"
         android:tint="@color/navigation_icon_color"
