@@ -4,8 +4,8 @@ package quickstartx.kural.activitys.splash;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import quickstartx.kural.activitys.home.MainActivity;
-import quickstartx.kural.activitys.home.TabbedActivity;
+import quickstartx.kural.activitys.home.ActHome;
+import quickstartx.kural.activitys.tabbedViews.ActTabbed;
 import quickstartx.kural.utils.BaseActivity;
 
 
@@ -23,15 +23,15 @@ public class ActSplash extends BaseActivity {
 
 
 
-        LoggedInUser = false;  //for testing . remove it
+        LoggedInUser = true;  //for testing . remove it
 
         if (LoggedInUser) {
 
-            i = new Intent(ActSplash.this, TabbedActivity.class);
+            i = new Intent(ActSplash.this, ActHome.class);
 
         } else {
 
-            i = new Intent(ActSplash.this, TabbedActivity.class);
+            i = new Intent(ActSplash.this, ActTabbed.class);
         }
 
         Intent2Activity();

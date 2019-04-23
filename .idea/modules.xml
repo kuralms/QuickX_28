@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/QuickX_28.iml" filepath="$PROJECT_DIR$/.idea/QuickX_28.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuickX_28.iml" filepath="$PROJECT_DIR$/QuickX_28.iml" />
       <module fileurl="file://$PROJECT_DIR$/Quickstartx/QuickstartX.iml" filepath="$PROJECT_DIR$/Quickstartx/QuickstartX.iml" />
     </modules>
   </component>
