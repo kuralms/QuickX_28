@@ -20,12 +20,13 @@
     <string name="show_contact">show</string>
     <string name="contacts_string">Total number of contacts: %1$,d\nFirst contact:<b>%2$s</b></string>
     <string name="contacts_empty">no contacts</string>
-    <string name="title_home">heeee</string>
-    <string name="title_dashboard">sasa</string>
-    <string name="title_notifications">asasa</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Gallery</string>
+    <string name="title_notifications">Notification</string>
     <string name="alert">Alert</string>
     <string name="OK">OK</string>
     <string name="title_activity_tabbed">tabbed</string>
     <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
 </resources>

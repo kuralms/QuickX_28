@@ -1,4 +1,4 @@
-package quickstartx.kural.activitys.objects;
+package quickstartx.kural.objects;
 
 import com.google.gson.annotations.SerializedName;
 
