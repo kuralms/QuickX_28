@@ -27,7 +27,7 @@ public class ActSplash extends BaseActivity {
 
         if (LoggedInUser) {
 
-            i = new Intent(ActSplash.this, ActHome.class);
+            i = new Intent(ActSplash.this, ActTabbed.class);
 
         } else {
 
